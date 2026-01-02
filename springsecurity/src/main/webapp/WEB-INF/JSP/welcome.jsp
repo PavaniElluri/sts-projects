@@ -9,6 +9,7 @@
     
     <!-- This creates a link to example.com with the text "welcome to the page" -->
     <a href="/login">click here to login</a>
+	<a href="/register">click here to register </a>
 
 </body>
 </html>

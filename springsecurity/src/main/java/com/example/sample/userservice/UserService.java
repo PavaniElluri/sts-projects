@@ -20,8 +20,19 @@ private UserRepo userRepo;
 public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException{
 	User user=userRepo.findByUsername(username);
 	return user;
+	
 }
+public void save(User user) {
+	userRepo.save(user);
+	
 }
+
+	
+}
+
+
+
+
 
 
 

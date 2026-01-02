@@ -20,12 +20,24 @@ import lombok.Data;
 @Table
 @Data
 public class User implements UserDetails {
+	public String getCpassword() {
+		return cpassword;
+	}
+
+	public void setCpassword(String cpassword) {
+		this.cpassword = cpassword;
+	}
+
 	@Id
 	private String username;
 	@Column
 	private String password;
 	@Column
 	private String details;
+	@Column
+	private String cpassword;
+	
+	
 
 	@Column
     private String groupPermission;
